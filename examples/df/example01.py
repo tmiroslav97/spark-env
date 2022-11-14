@@ -16,7 +16,7 @@ spark = SparkSession \
 quiet_logs(spark)
 
 # spark is an existing SparkSession
-df = spark.read.json("file:///spark/examples/src/main/data/people.json")
+df = spark.read.json("file:///spark/examples/src/main/resources/people.json")
 # Displays the content of the DataFrame to stdout
 df.show()
 
